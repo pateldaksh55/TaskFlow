@@ -82,7 +82,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -125,3 +125,10 @@ if extra_cors:
 
 CORS_ALLOWED_ORIGINS = DEFAULT_CORS_ALLOWED_ORIGINS
 CORS_ALLOW_CREDENTIALS = True
+
+
+STORAGES = {
+   "staticfiles": {
+      "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+   }
+}
