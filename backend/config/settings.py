@@ -13,6 +13,7 @@ ALLOWED_HOSTS = [
     "taskflow-4v5s.onrender.com",
     "localhost",
     "127.0.0.1",
+    "dazzling-delight-production-3e41.up.railway.app"
 ]
 
 INSTALLED_APPS = [
